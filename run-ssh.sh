@@ -2,6 +2,7 @@
 
 # make sure ssh is running
 # if it isn't running, you'll be prompted to enter your password
+# This works for Ubuntu. Youmay need to change it for your OS.
 service ssh status | grep "is running" > /dev/null
 if [ $? -gt 0 ]
 then
